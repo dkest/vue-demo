@@ -1,61 +1,3 @@
-
-## 此项目除了正常的bug修复，不再进行功能更新
-如果对状态管理感兴趣，可以看下 [Tms](https://github.com/FollowmeTech/tms)，文档更齐全
-
-## 前言
-```
-国庆在回家的路上，得知了vue2发布了正式版，
-国庆回来后，在公司内两个项目便直接应用上了vue2，
-一个是PC端的商户后台，一个是微信端商城，
-都是基于Vue2、vue-router、vuex ......
-在开发的过程中，遇到了一系列的问题，
-比如页面后退数据还原，滚动条还原，
-登录超时，获取列表数据，表单提交，
-多台服务器自动化部署，最终后一个个解决了，
-能够平稳的从react切换到vue2开发，vue的文档功不可没。
-```
-github:[https://github.com/lzxb/vue2-demo](https://github.com/lzxb/vue2-demo)
-
-## 源码说明
-### 项目目录说明
-```
-.
-|-- config                           // 项目开发环境配置
-|   |-- index.js                     // 项目打包部署配置
-|-- src                              // 源码目录
-|   |-- components                   // 公共组件
-|       |-- header.vue               // 页面头部公共组件
-|       |-- index.js                 // 加载各种公共组件
-|   |-- config                       // 路由配置和程序的基本信息配置
-|       |-- routes.js                // 配置页面路由
-|   |-- css                          // 各种css文件
-|       |-- common.css               // 全局通用css文件
-|   |-- iconfont                     // 各种字体图标
-|   |-- images                       // 公共图片
-|   |-- less                         // 各种less文件
-|       |-- common.less              // 全局通用less文件
-|   |-- pages                        // 页面组件
-|       |-- home                     // 个人中心
-|       |-- index                    // 网站首页
-|       |-- login                    // 登录
-|       |-- signout                  // 退出
-|   |-- store                        // vuex的状态管理
-|       |-- index.js                 // 加载各种store模块
-|       |-- user.js                  // 用户store
-|   |-- template                     // 各种html文件
-|       |-- index.html               // 程序入口html文件
-|   |-- util                         // 公共的js方法，vue的mixin混合
-|   |-- app.vue                      // 页面入口文件
-|   |-- main.js                      // 程序入口文件，加载各种公共组件
-|-- .babelrc                         // ES6语法编译配置
-|-- gulpfile.js                      // 启动，打包，部署，自动化构建
-|-- webpack.config.js                // 程序打包配置
-|-- server.js                        // 代理服务器配置
-|-- README.md                        // 项目说明
-|-- package.json                     // 配置项目相关信息，通过执行 npm init 命令创建
-.
-```
-
 ### 开发环境依赖模块说明
 #### webpack相关模块
 ```
@@ -112,8 +54,3 @@ vuex                                  // 组件状态管理
 npm install
 npm run dev
 http://localhost:3000/app/
-```
-
-## 开发教程
-[1.开发环境搭建](https://github.com/lzxb/vue2-demo/blob/master/docs/1.md)  
-[2.实现登录退出](https://github.com/lzxb/vue2-demo/blob/master/docs/2.md)
